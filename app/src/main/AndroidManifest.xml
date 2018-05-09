@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.prudenttechno.radioNotification">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="utechandroid.com.radio.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_radio"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="DATABASE"
+            android:value="emoji.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="br.com.instachat.android" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmF2TYoJFcL2PEFb1elbGIrMfySe2i-ng" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="utechandroid.com.radio.service.UserService.UserService"
+            android:exported="false"
+            android:persistent="true" />
+
+        <receiver android:name="utechandroid.com.radio.receiver.StartFirebaseAtBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ImagePicker 相关配置 -->
+        <activity
+            android:name="com.linchaolong.android.imagepicker.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="utechandroid.com.radio.ui.signup.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channel.ChannelActivity"
+            android:label="@string/title_activity_channel"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="utechandroid.com.radio.ui.CreateRadio.CreateRadioActivity"
+            android:label="@string/title_activity_create_radio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="utechandroid.com.radio.ui.home.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <tools:validation testUrl="http://radiobroadcast.ooo/channelJoin" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="radiobroadcast.ooo"
+                    android:pathPrefix="/channelJoin"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="utechandroid.com.radio.ui.channels.myChannels.MyChannelsActivity"
+            android:label="@string/title_activity_my_channels"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.message.MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="utechandroid.com.radio.ui.categories.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channelList.ChannelListActivity"
+            android:label="@string/title_activity_channel_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channelpublic.ChannelPublicActivity"
+            android:label="@string/title_activity_channel_public"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channelPublicDetails.ChannelPublicDetailsActivity"
+            android:label="@string/title_activity_channel_public_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.joinChannel.JoinChannelActivity"
+            android:label="@string/title_activity_join_channel"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channelPrivateDetails.ChannelPrivateDetailsActivity"
+            android:label="@string/title_activity_channel_private_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.SearchContactDirectory.SearchContactActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_search_contact"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.SearchContactDirectory.SearchContactDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_search_contact_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.SearchContactDirectory.SearchContactFamilyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_search_contact_family"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.messageStatus.MessageStatusActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channelDetails.ChannelDetailActivity"
+            android:label="@string/title_activity_channel_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.userprofile.inChannel.UserProfileChannelActivity"
+            android:label="@string/title_activity_user_profile_channel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.channelEdit.ChannelEditActivity"
+            android:label="@string/title_activity_channel_edit"
+            android:theme="@style/AppThemeStatusBarTransparent" />
+        <activity
+            android:name="utechandroid.com.radio.ui.splashscreen.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="utechandroid.com.radio.ui.signin.SigninActivity"
+            android:label="@string/title_activity_signin"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.SignUpComplete.CompleteProfileActivity"
+            android:label="@string/title_activity_complete_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.myProfile.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.ImageViewer.ImageViewerActivity"
+            android:label="@string/title_activity_image_viewer"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="utechandroid.com.radio.ui.privacyPolicy.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="utechandroid.com.radio.ui.SubCategoryActivity"
+            android:label="Browse Channel"
+            android:screenOrientation="portrait" />
+        <activity android:name="utechandroid.com.radio.ui.MyFamily.MyFamilyEditActivity" />
+        <activity android:name="utechandroid.com.radio.ui.MyFamily.MyFamilyShowDetailActivity" />
+        <activity
+            android:name="utechandroid.com.radio.ui.setting.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName="utechandroid.com.radio.ui.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="utechandroid.com.radio.ui.home.HomeActivity" />
+        </activity>
+
+        <service android:name="utechandroid.com.radio.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name="utechandroid.com.radio.notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <service
+            android:name="utechandroid.com.radio.notification.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="utechandroid.com.radio.ui.notificationDetails.NotificationDetailsActivity"
+            android:label=""
+            android:parentActivityName="utechandroid.com.radio.ui.home.HomeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="utechandroid.com.radio.ui.home.HomeActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="400">
+    <slide android:slideEdge="top">
+        <targets>
+            <target android:targetId="@id/appbar_layout_my_radio_channels" />
+        </targets>
+    </slide>
+    <slide android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@id/recyclerView_my_radio_channels" />
+            <target android:targetId="@id/cardView_my_channel_list"/>
+        </targets>
+    </slide>
+    <fade>
+        <targets>
+            <target android:targetId="@android:id/statusBarBackground" />
+            <target android:targetId="@android:id/navigationBarBackground" />
+        </targets>
+    </fade>
+</transitionSet>

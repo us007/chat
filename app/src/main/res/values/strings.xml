@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">42 Jain Samaj</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="title_activity_radio_home">RadioBroadcast</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="got_titletext">Who Will Ride The Third Dragon In \'Game Of Thrones\' Season 7?</string>
+    <string name="got_image_url">http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/image_embed/public/2016/04/29/game-thrones-daenerys-dragon-drogon.jpg</string>
+    <string name="got_subtext">Game of Thrones season 7 will kick off a new age of Game of Thrones, with the show becoming a true epic fantasy for the first time. Don’t worry, it will remain a high political drama too, but the war between ice and fire isn’t far off now, and Daenerys Targaryen seems destined to lead the fight</string>
+    <string name="got_summarytext">You\'ve shown interest in Game of Thrones series</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_channel">ChannelActivity</string>
+    <string name="title_activity_create_radio">Complete Radio Details</string>
+    <string name="title_activity_my_radio_channels"></string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_my_channels">MyChannelsActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_category">Browse Categories</string>
+    <string name="title_activity_channel_list">ChannelListActivity</string>
+    <string name="title_activity_channel_public">ChannelPublicActivity</string>
+    <string name="title_activity_channel_public_details">ChannelPublicDetailsActivity</string>
+    <string name="title_activity_join_channel">RadioBroadcast</string>
+    <string name="title_activity_channel_private_details">ChannelPrivateDetailsActivity</string>
+    <string name="title_activity_search_contact">SearchContactActivity</string>
+    <string name="title_activity_search_contact_detail">Contact Detail</string>
+    <string name="title_activity_search_contact_family">Family Detail</string>
+    <string name="title_activity_message_status">MessageStatusActivity</string>
+    <string name="title_activity_channel_detail"></string>
+    <string name="title_activity_user_profile_channel"></string>
+    <string name="title_activity_channel_edit"></string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="title_activity_complete_profile">Complete Profile</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_image_viewer"></string>
+    <string name="title_activity_setting">Settings</string>
+
+
+    <!--Color Picker-->
+    <string name="colorpicker_dialog_title">Choose the color</string>
+    <string name="colorpicker_dialog_cancel">CANCEL</string>
+    <string name="colorpicker_dialog_ok">OK</string>
+
+    <!--Ted Picker-->
+    <string name="tedbottompicker_title">Select Image</string>
+    <string name="no_image">No Image</string>
+    <string name="done">Done</string>
+    <string name="title_activity_notification_details">NotificationDetailsActivity</string>
+</resources>

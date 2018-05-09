@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:mContext="info.androidhive.gmail.activity.MainActivity">
+    <item
+        android:id="@+id/action_info_message"
+        android:icon="@drawable/ic_info_outline_white"
+        android:orderInCategory="100"
+        android:title="Info"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_copy_message"
+        android:icon="@drawable/ic_content_copy_white"
+        android:orderInCategory="200"
+        android:title="Copy Message"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete_message"
+        android:icon="@drawable/ic_delete_white"
+        android:orderInCategory="300"
+        android:title="Delete Message"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+</menu>

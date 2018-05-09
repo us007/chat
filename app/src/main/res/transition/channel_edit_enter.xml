@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide android:slideEdge="top">
+        <targets>
+            <target android:targetId="@id/appbar_user_profile_channel" />
+        </targets>
+    </slide>
+    <slide android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@id/crd_channel_public_1" />
+            <target android:targetId="@id/crd_channel_public_2" />
+            <target android:targetId="@id/btn_update_channel" />
+        </targets>
+    </slide>
+    <fade>
+        <targets>
+            <target android:targetId="@android:id/statusBarBackground" />
+            <target android:targetId="@android:id/navigationBarBackground" />
+        </targets>
+    </fade>
+</transitionSet>

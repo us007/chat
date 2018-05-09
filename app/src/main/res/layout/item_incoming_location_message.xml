@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/tools"
+    android:id="@+id/layout_chat_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/dr_selectable_incoming_message"
+    android:clickable="true"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@id/bubble"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/message_incoming_bubble_margin_right"
+        android:layout_marginRight="@dimen/message_incoming_bubble_margin_right"
+        android:background="@drawable/shape_incoming_message"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@id/messageSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/lite_map"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            map:liteMode="true"
+            map:mapType="normal" />
+
+        <TextView
+            android:id="@id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lite_map"
+            android:layout_marginTop="3dp"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/messageText"
+            android:drawablePadding="3dp"
+            android:gravity="start"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

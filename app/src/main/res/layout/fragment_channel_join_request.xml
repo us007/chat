@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="utechandroid.com.radio.ui.channelJoinRequest.ChannelJoinRequestFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_channel_join_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/view_empty_request"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_height="120dp"
+            android:layout_marginTop="-60dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/request" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="No Request Available to Join Channel"
+            android:textColor="@color/greyDisabled"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

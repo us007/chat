@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+    <slide android:slideEdge="top">
+        <targets>
+            <target android:targetId="@id/appbar_layout_my_radio_channels" />
+        </targets>
+    </slide>
+    <fade>
+        <targets>
+            <target android:targetId="@android:id/statusBarBackground" />
+            <target android:targetId="@android:id/navigationBarBackground" />
+        </targets>
+    </fade>
+</transitionSet>

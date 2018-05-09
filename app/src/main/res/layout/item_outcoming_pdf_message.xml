@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_chat_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/dr_selectable_incoming_message"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/message_outcoming_bubble_margin_left"
+        android:layout_marginStart="@dimen/message_outcoming_bubble_margin_left"
+        android:background="@drawable/shape_outcoming_message"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@id/messageSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@id/pdf"
+                android:layout_width="210dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <com.dmitrymalkovich.android.ProgressFloatingActionButton
+                android:id="@+id/fab_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:clickable="true"
+                android:visibility="invisible"
+                app:layout_anchor="@id/image"
+                app:layout_anchorGravity="center">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_file_upload_white" />
+
+                <ProgressBar
+                    android:id="@+id/fab_progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:progressBackgroundTint="?attr/colorPrimaryDark"
+                    android:progressTint="?attr/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+            </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="1dp"
+            android:drawablePadding="3dp"
+            android:gravity="end"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

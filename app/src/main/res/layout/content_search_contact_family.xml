@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="utechandroid.com.radio.ui.SearchContactDirectory.SearchContactFamilyActivity"
+    tools:showIn="@layout/activity_search_contact_family">
+
+    <ProgressBar
+        android:id="@+id/progress_search"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.CardView
+        android:layout_alignParentTop="true"
+        android:id="@+id/cardView_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+
+        <EditText
+            android:id="@+id/edt_search_contact_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Filter by Name,Address,Occupation"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:maxLines="1" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/cardView_filter"
+        android:id="@+id/cardView_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:padding="5dp"
+                android:background="@android:color/darker_gray"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/simpleTableLayout"
+                android:stretchColumns="*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:id="@+id/firstRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.4"
+                        android:id="@+id/txt_contact_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="Name"
+                        android:textColor="@android:color/white"
+                        android:gravity="start"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:id="@+id/txt_contact_residence_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Residence No."
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:id="@+id/txt_contact_office_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="Office No."
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:id="@+id/txt_contact_mobile_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="Mobile No."
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                </TableRow>
+            </TableLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

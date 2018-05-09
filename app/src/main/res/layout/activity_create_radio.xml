@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="utechandroid.com.radio.ui.CreateRadio.CreateRadioActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:clickable="false"
+            android:gravity="center">
+
+            <com.jackandphantom.circularprogressbar.CircleProgressbar
+                android:visibility="gone"
+                android:id="@+id/pg_create_radio_upload_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                app:cpb_foregroundProgressColor="#FFFFFF"
+                app:cpb_backgroundProgressColor="@android:color/transparent"
+                app:cpb_foregroundProgressWidth="15"
+                app:cpb_progress="20"
+                app:cpb_roundedCorner="true"
+                app:cpb_touchEnabled="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_create_radio_upload_image"
+                android:layout_width="120dp"
+                android:background="@android:color/white"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:riv_corner_radius="60dip"
+                app:riv_mutate_background="true"
+                android:scaleType="center"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_photo_camera" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_create_radio" />
+
+</android.support.design.widget.CoordinatorLayout>

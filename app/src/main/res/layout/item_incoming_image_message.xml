@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_chat_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/dr_selectable_incoming_message"
+    android:clickable="true"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/message_incoming_bubble_margin_right"
+        android:layout_marginRight="@dimen/message_incoming_bubble_margin_right"
+        android:background="@drawable/shape_incoming_message"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@id/messageSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/messageSender">
+
+            <utechandroid.com.radio.util.RoundRectCornerImageView
+                android:id="@id/image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:transitionName="imageTransition"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/placeholder" />
+
+            <com.dmitrymalkovich.android.ProgressFloatingActionButton
+                android:id="@+id/fab_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_anchor="@id/image"
+                android:visibility="invisible"
+                app:layout_anchorGravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:clickable="true">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_file_download_white" />
+
+                <ProgressBar
+                    android:id="@+id/fab_progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressBackgroundTint="?attr/colorPrimaryDark"
+                    android:progressTint="?attr/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+            </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/framelayout_image"
+            android:layout_marginTop="3dp"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/messageText"
+            android:drawablePadding="3dp"
+            android:gravity="start"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
