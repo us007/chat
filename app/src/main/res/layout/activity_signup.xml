@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWindowBackground"
-    tools:context="utechandroid.com.radio.ui.signup.SignupActivity">
+    tools:context="utechandroid.com.demo.ui.signup.SignupActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_sign_up"

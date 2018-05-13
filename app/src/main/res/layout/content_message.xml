@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <utechandroid.com.radio.util.ProgressBar.MaterialProgressBar
+    <utechandroid.com.demo.util.ProgressBar.MaterialProgressBar
         android:id="@+id/progress_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:visibility="gone"
         app:progress_stoke_width="2dp" />
 
-    <utechandroid.com.radio.util.chatkit.messages.MessagesList
+    <utechandroid.com.demo.util.chatkit.messages.MessagesList
         android:id="@+id/messagesList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,7 +37,7 @@
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content">
 
-        <utechandroid.com.radio.util.chatkit.messages.MessageInput
+        <utechandroid.com.demo.util.chatkit.messages.MessageInput
             android:background="@android:color/white"
             android:id="@+id/input"
             android:layout_width="match_parent"

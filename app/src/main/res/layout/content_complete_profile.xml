@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="utechandroid.com.radio.ui.SignUpComplete.CompleteProfileActivity"
+    tools:context="utechandroid.com.demo.ui.SignUpComplete.CompleteProfileActivity"
     tools:showIn="@layout/activity_complete_profile">
 
     <LinearLayout

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="utechandroid.com.radio.ui.channelpublic.ChannelPublicActivity">
+    tools:context="utechandroid.com.demo.ui.channelpublic.ChannelPublicActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_layout_public_channel"

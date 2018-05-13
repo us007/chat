@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="utechandroid.com.radio.ui.channelList.ChannelListActivity"
+    tools:context="utechandroid.com.demo.ui.channelList.ChannelListActivity"
     tools:showIn="@layout/activity_channel_list">
 
     <ProgressBar

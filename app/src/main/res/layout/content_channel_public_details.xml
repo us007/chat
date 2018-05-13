@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="utechandroid.com.radio.ui.channelPublicDetails.ChannelPublicDetailsActivity"
+    tools:context="utechandroid.com.demo.ui.channelPublicDetails.ChannelPublicDetailsActivity"
     tools:showIn="@layout/activity_channel_public_details">
 
 </android.support.constraint.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="utechandroid.com.radio.ui.CreateRadio.CreateRadioActivity"
+    tools:context="utechandroid.com.demo.ui.CreateRadio.CreateRadioActivity"
     tools:showIn="@layout/activity_create_radio">
 
     <LinearLayout

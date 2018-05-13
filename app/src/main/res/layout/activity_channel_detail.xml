@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="utechandroid.com.radio.ui.channelDetails.ChannelDetailActivity">
+    tools:context="utechandroid.com.demo.ui.channelDetails.ChannelDetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_channel_detail"

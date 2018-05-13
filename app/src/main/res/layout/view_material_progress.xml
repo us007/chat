@@ -10,7 +10,7 @@
     android:layout_gravity="center"
     android:orientation="vertical">
 
-    <utechandroid.com.radio.util.ProgressBar.MaterialProgressBar
+    <utechandroid.com.demo.util.ProgressBar.MaterialProgressBar
         android:id="@+id/progress1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

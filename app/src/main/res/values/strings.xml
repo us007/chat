@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">42 Jain Samaj</string>
+    <string name="app_name">Chat demo</string>
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="utechandroid.com.radio.ui.channelJoinRequest.ChannelJoinRequestFragment">
+    tools:context="utechandroid.com.demo.ui.channelJoinRequest.ChannelJoinRequestFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView_channel_join_request"

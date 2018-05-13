@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="utechandroid.com.radio.ui.messageStatus.MessageStatusActivity">
+    tools:context="utechandroid.com.demo.ui.messageStatus.MessageStatusActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

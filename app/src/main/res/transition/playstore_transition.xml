@@ -5,7 +5,7 @@
     >
 
     <transitionSet>
-        <transition class="utechandroid.com.radio.transition.PlayStoreTransition" />
+        <transition class="utechandroid.com.demo.transition.PlayStoreTransition" />
         <targets>
         <target android:excludeId="@id/img_radio_my_channels" />
         </targets>

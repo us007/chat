@@ -42,7 +42,7 @@
                     android:src="@drawable/input_emoji"/>
             </LinearLayout>
 
-            <utechandroid.com.radio.model.layout.EmojiEditText
+            <utechandroid.com.demo.model.layout.EmojiEditText
                 android:id="@+id/input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

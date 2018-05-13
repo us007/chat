@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true">
 
-            <utechandroid.com.radio.util.RoundRectCornerImageView
+            <utechandroid.com.demo.util.RoundRectCornerImageView
                 android:id="@id/image"
                 android:layout_width="170dp"
                 android:layout_height="170dp"

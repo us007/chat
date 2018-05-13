@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:padding="8dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="utechandroid.com.radio.ui.channelEdit.ChannelEditActivity"
+        tools:context="utechandroid.com.demo.ui.channelEdit.ChannelEditActivity"
         tools:showIn="@layout/activity_channel_edit">
 
         <android.support.v7.widget.CardView

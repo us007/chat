@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="utechandroid.com.radio.ui.SearchContactDirectory.SearchContactDetailActivity"
+    tools:context="utechandroid.com.demo.ui.SearchContactDirectory.SearchContactDetailActivity"
     tools:showIn="@layout/activity_search_contact_detail">
 
     <LinearLayout

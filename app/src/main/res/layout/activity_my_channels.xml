@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="utechandroid.com.radio.ui.channels.myChannels.MyChannelsActivity">
+    tools:context="utechandroid.com.demo.ui.channels.myChannels.MyChannelsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_layout_my_radio_channels"

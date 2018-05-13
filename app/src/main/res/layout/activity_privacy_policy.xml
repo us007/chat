@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="utechandroid.com.radio.ui.privacyPolicy.PrivacyPolicyActivity">
+    tools:context="utechandroid.com.demo.ui.privacyPolicy.PrivacyPolicyActivity">
 
     <!--<WebView-->
         <!--android:id="@+id/web_privacy_policy"-->
